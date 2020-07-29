@@ -4,7 +4,7 @@ from googleapiclient.discovery import build
 
 class YoutubeApi():
 
-    api_key = os.environ.get('YOUTUBE_API_KEY')
+    api_key = os.environ['YOUTUBE_API_KEY']
     youtube_object = build('youtube', 'v3', developerKey=api_key)
 
 
